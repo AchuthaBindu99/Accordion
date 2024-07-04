@@ -1,13 +1,15 @@
-import Accord from "./components/faqs";
+import Accord from "./components/accordion";
 
 
 function App() {
 
+  
   return (
-    
-      <>
-       <Accord />
-      </>
+
+      <div>
+       <Accord /> 
+      </div>
+
   );
 
 }

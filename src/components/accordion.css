@@ -6,19 +6,18 @@
     justify-content: center;
     align-items: center;
     font-family: "Rubik", sans-serif;
-    /* border: 1px solid black; */
+   
     background-color: #e0e3e8;
  }
 
  .accordian_box{
-     border: 1px solid rgba(90, 116, 148, 0.3);
+     border: 1px solid rgba(83, 111, 146, 0.3);
      position: relative;
-     /* left: 0px; */
-     top: -20px;
-     width: 1030px;
+     top: 0px;
+     width: 800px;
      border-radius: 12px;
      background-color: #fff;
-     box-shadow: 5px 10px 10px rgba(90, 116, 148, 0.3);
+     box-shadow: 5px 10px 10px rgba(83, 111, 146, 0.3);
      padding-bottom: 10px;
  }
 
@@ -32,8 +31,9 @@
  }
 
  .accordion_items{
-    width: 1000px;
+    width: 770px;
     padding-left: 15px;
+    border-radius: 10px;
  }
 
  .item{
@@ -41,10 +41,10 @@
     margin-bottom: 5px;  
     border-radius: 10px;
     border-radius: 15px;
-    /* border: 1px solid black; */
  }
+
 .title{
-    color: #475f7b;
+    color: #9d73a1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,10 +53,12 @@
     font-weight:700;
     background-color: whitesmoke;
     padding-left: 15px;
-    /* border: 1px solid black; */
+    border-radius: 15px ;
+    border: 1px solid rgb(247, 240, 230);
 }
+
 .question{
-    /* border: 1px solid black; */
+    border: 1px solid rgb(247, 240, 230);
     background-color: #5a8dee;
     display: flex;
     justify-content: space-between;
@@ -66,24 +68,40 @@
     cursor: pointer;
     font-size: larger;
     font-weight:700;
-    width: 983px;
+    width: 755px;
     color: whitesmoke;
 }
-.title :hover{
-    background-color: #5a8dee;
 
-}
-
-.content{
+.answer{
     max-height: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0,1,0,1);
 }
 
-.content.show{
+.show.answer{
     padding-top: 10px;
     height: auto;
     max-height: 9999px;
     transition: all 0 9999px;
     padding-left: 15px;
+    border: 1px solid rgb(247, 240, 230);
+    border-radius: 15px ;
+}
+
+@media only screen and (max-width:790px){
+    .accordian_box{
+        width:350px;
+    }
+    .accordion_items{
+        width:320px;  
+    }
+    .question{
+        width:306px;
+        font-size: large;
+        font-weight:600;
+    }
+    .title{
+        font-size: large;
+        font-weight:600;
+    }
 }
